@@ -1,0 +1,12 @@
+
+epochs: 100
+work_dir: '.'
+batch_size_train: 2
+batch_size_val: 4
+
+exp_name: 'None'
+device: 'cuda:0'
+ckpt: ''
+save_ckpt_interval: 1
+eval_interval: 1
+

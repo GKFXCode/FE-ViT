@@ -1,0 +1,12 @@
+name: 'VIPLMSTmapDataSet'
+root_path: '/media/ubuntu/DATA2/vhwz/dataset/VIPL-HR/MSTmaps'
+mode: ''
+divide_file_train: /media/ubuntu/DATA2/vhwz/dataset/VIPL-HR/divide/train_[v1-v9]_[s1-s3].txt
+divide_file_val:  /media/ubuntu/DATA2/vhwz/dataset/VIPL-HR/divide/val_[v1-v9]_[s1-s3].txt
+nb_sample: 16
+stride_sample: 5
+input_type: 'stmap'
+gt_type: 'bpm'
+img_size: 224
+toseq: True
+load_bvps: True

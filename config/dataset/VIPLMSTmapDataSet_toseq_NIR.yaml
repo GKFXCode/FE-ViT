@@ -1,0 +1,11 @@
+name: 'VIPLMSTmapDataSet'
+root_path: '/home/raid/vhwz/code/CVD-Physiological-Measurement-master/MSTmap_generation/MSTmaps_datasource4'
+mode: ''
+divide_file_train: ''
+divide_file_val:  /home/data/vhwz/dataset/VIPL-HR/divide/val_[s4]_dlib_morethan90.txt
+nb_sample: 16
+stride_sample: 5
+input_type: 'stmap'
+gt_type: 'bpm'
+img_size: 224
+toseq: True

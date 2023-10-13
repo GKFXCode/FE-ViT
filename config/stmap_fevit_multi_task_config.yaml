@@ -1,0 +1,26 @@
+defaults:
+  - dataset@dataset.train: VIPLMSTmapDataSet_toseq
+  - dataset@dataset.val: VIPLMSTmapDataSet_toseq
+  - model: autoformer_multi_task
+  - optimizer: Adam
+  - runner: HREstimateMultiTaskRunner
+  - run: default
+  - _self_
+
+optimizer:
+  lr: 3e-5
+  
+run:
+  exp_name: "fevit_multi_task"
+  work_dir: '.'
+  device: 'cuda:0'
+  ckpt: null
+  batch_size_train: 16
+  batch_size_val: 32
+
+dataset:
+  mode:  ''
+  
+hydra:
+  run:
+    dir: /home/data/vhwz/code/vhwz_video/output/${run.exp_name}/${now:%Y-%m-%d_%H-%M-%S}

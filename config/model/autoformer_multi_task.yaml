@@ -1,0 +1,16 @@
+name: 'AutoformerMultiTask'
+output_attention: False
+d_model: 512
+d_ff: 2048
+d_layers: 1
+moving_avg: 25
+enc_in: 189
+factor: 1
+embed: 'timeF'
+freq: 'h'
+dropout: 0.05
+e_layers: 2
+dec_in: 7
+n_heads: 8
+activation: 'gelu'
+c_out: 7

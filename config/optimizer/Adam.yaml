@@ -1,0 +1,2 @@
+optimizer_name: Adam
+lr: 1e-4
